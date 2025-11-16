@@ -1,9 +1,11 @@
-﻿using BestStoreMVC.Models;
+﻿using BestStoreMVC.Domain.IdentityEntities;
+using BestStoreMVC.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BestStoreMVC.Services
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid>
     {
         public ApplicationDbContext( DbContextOptions options) : base (options)
         {

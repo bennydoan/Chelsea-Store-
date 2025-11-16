@@ -1,4 +1,8 @@
+using BestStoreMVC.Domain.IdentityEntities;
 using BestStoreMVC.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BestStoreMVC
@@ -17,6 +21,22 @@ namespace BestStoreMVC
                 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
                 options.UseSqlServer(connectionString);
             });
+            //How to add Identity 
+            builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders()
+                .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>()
+                .AddRoleStore<RoleStore<ApplicationRole, ApplicationDbContext,Guid>>();
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+            });
+
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Account/login";
+            });
 
             var app = builder.Build();
 
@@ -32,8 +52,17 @@ namespace BestStoreMVC
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseAuthorization();
+
+            // add this after app.UseAuthorization();
+            app.MapAreaControllerRoute(
+                name: "users-area",
+                areaName: "Users",
+                pattern: "Users/{controller=Home}/{action=Index}/{id?}"
+            );
 
             app.MapControllerRoute(
                 name: "default",

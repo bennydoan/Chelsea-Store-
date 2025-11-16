@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Login;
+
+
+
+<div class="form-container">
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <p style="text-align:center; font-weight:bold; margin-bottom:1rem; color:var(--success-color,#198754);">
+            @TempData["SuccessMessage"]
+        </p>
+    }
+
+     Registered? <a asp-action="Register" asp-controller="Account" class="link-hover">Register</a>
+    <h2 class="text-large">Login</h2>
+
+    <form asp-controller="Account" asp-action="Login" method="post">
+    @*UserName*@
+    <div class="form-field flex">
+        <div class="w-25">
+            <label asp-for="UserName" class="form-label pt">User Name</label>
+        </div>
+        <div class="flex-1">
+                <input asp-for="UserName" class="form-input" />
+                <span asp-validation-for="UserName"></span>
+        </div>
+    </div>
+
+     @*Password*@
+    <div class="form-field flex">
+        <div class="w-25">
+                <label asp-for="Password" class="form-label pt">Email</label>
+        </div>
+        <div class="flex-1">
+                <input asp-for="Password" class="form-input" />
+                <span asp-validation-for="Password"></span>
+        </div>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"  id="RememberAccount" asp-for="IsPersistent">
+            <label class="form-check-label" for="RememberAccount">
+                Remember me
+           </label>
+    </div>
+
+        @* button*@  
+        <div class="form-field flex">
+            <div class="w-25"></div>
+            <div class="flex-1 d-flex justify-content-center">
+                <button class="button button-green-back" type="submit">Login</button>
+                <div asp-validation-summary="All" class="text-red ms-3"></div>
+            </div>
+        </div>
+    </form>
+
+</div>

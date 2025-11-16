@@ -1,0 +1,76 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\benny\\OneDrive\\Desktop\\New ASPNET CORE\\BestStoreMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46BBD8FC-CFEB-45E2-825B-81316EA94BF1}|BestStoreMVC\\BestStoreMVC.csproj|c:\\users\\benny\\onedrive\\desktop\\new aspnet core\\beststoremvc\\beststoremvc\\areas\\users\\controllers\\account1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46BBD8FC-CFEB-45E2-825B-81316EA94BF1}|BestStoreMVC\\BestStoreMVC.csproj|solutionrelative:beststoremvc\\areas\\users\\controllers\\account1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46BBD8FC-CFEB-45E2-825B-81316EA94BF1}|BestStoreMVC\\BestStoreMVC.csproj|c:\\users\\benny\\onedrive\\desktop\\new aspnet core\\beststoremvc\\beststoremvc\\areas\\users\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46BBD8FC-CFEB-45E2-825B-81316EA94BF1}|BestStoreMVC\\BestStoreMVC.csproj|solutionrelative:beststoremvc\\areas\\users\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\benny\\OneDrive\\Desktop\\New ASPNET CORE\\BestStoreMVC\\BestStoreMVC\\Areas\\Users\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BestStoreMVC\\Areas\\Users\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\benny\\OneDrive\\Desktop\\New ASPNET CORE\\BestStoreMVC\\BestStoreMVC\\Areas\\Users\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BestStoreMVC\\Areas\\Users\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T20:27:02.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Account1Controller.cs",
+              "DocumentMoniker": "C:\\Users\\benny\\OneDrive\\Desktop\\New ASPNET CORE\\BestStoreMVC\\BestStoreMVC\\Areas\\Users\\Controllers\\Account1Controller.cs",
+              "RelativeDocumentMoniker": "BestStoreMVC\\Areas\\Users\\Controllers\\Account1Controller.cs",
+              "ToolTip": "C:\\Users\\benny\\OneDrive\\Desktop\\New ASPNET CORE\\BestStoreMVC\\BestStoreMVC\\Areas\\Users\\Controllers\\Account1Controller.cs",
+              "RelativeToolTip": "BestStoreMVC\\Areas\\Users\\Controllers\\Account1Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:26:55.348Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 253,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

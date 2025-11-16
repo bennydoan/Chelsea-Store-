@@ -1,12 +1,16 @@
 ﻿using BestStoreMVC.Models;
 using BestStoreMVC.Models.ProductDTOs;
 using BestStoreMVC.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using System;
 
 namespace BestStoreMVC.Controllers
 {
+    [Authorize(Roles ="Admin")]
+  
+
     public class ProjectController : Controller
     {
         private readonly ApplicationDbContext _context;

@@ -20,3 +20,100 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Register / form styles */
+
+.form-container {
+    max-width: 720px;
+    margin: 28px auto;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.text-large {
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+    color: #1f2937;
+}
+
+.text-grey {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.link-hover {
+    color: #0d6efd;
+    text-decoration: none;
+}
+.link-hover:hover {
+    text-decoration: underline;
+}
+
+/* Layout helpers used in the view */
+.flex { display: flex; align-items: center; gap: 12px; }
+.w-25 { width: 25%; min-width: 110px; }
+.flex-1 { flex: 1; }
+
+/* Form field visuals */
+.form-field { margin: 8px 0 18px; }
+.form-label {
+    font-size: 0.95rem;
+    color: #374151;
+    display: block;
+}
+.pt { padding-top: 6px; }
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #111827;
+    background: #fff;
+    box-sizing: border-box;
+}
+.form-input:focus {
+    border-color: #7c3aed;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(124,58,237,0.08);
+}
+
+/* Buttons */
+.button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+.button-green-back {
+    background: linear-gradient(180deg,#10b981,#059669);
+    color: #fff;
+}
+.button-green-back:hover { opacity: 0.95; }
+
+/* Validation messaging */
+.text-red, .field-validation-error, .validation-summary-errors {
+    color: #dc3545;
+}
+.field-validation-error {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.875rem;
+}
+
+/* Small inline error style for asp-validation-for spans */
+.form-field .text-danger, .form-field span.field-validation-error {
+    color: #dc3545;
+}
+
+/* Misc */
+.ml { margin-left: 12px; }
+
+@media (max-width: 768px) {
+        }
